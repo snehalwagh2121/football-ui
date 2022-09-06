@@ -18,6 +18,7 @@ export class LeaguesComponent implements OnInit {
   ngOnInit(): void {
     console.log("league component called to get leagues");
     this.leagueService.callLeaguesAPI().subscribe(res => {
+      console.log(res);
       this.league= res;
     });
   }

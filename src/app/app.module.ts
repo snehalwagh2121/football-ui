@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { League } from './leagues/league';
 import { LeagueServiceService } from './leagues/league-service.service';
 import { LeaguesComponent } from './leagues/leagues.component';
+import { SeasonsComponent } from './seasons/seasons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LeaguesComponent
+    LeaguesComponent,
+    SeasonsComponent
   ],
   imports: [
     BrowserModule,
