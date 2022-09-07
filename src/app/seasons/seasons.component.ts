@@ -22,4 +22,8 @@ export class SeasonsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getLeaguesBySeason(year:number) {
+    console.log("calling the league component for getting the leagues by season");
+  }
+
 }

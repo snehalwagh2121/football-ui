@@ -17,22 +17,22 @@ export class LeaguesComponent implements OnInit {
 
   ngOnInit(): void {
     console.log("league component called to get leagues");
-    this.leagueService.callLeaguesAPI().subscribe(res => {
-      console.log(res);
-      this.league= res;
-    });
+    // this.leagueService.callLeaguesAPI().subscribe(res => {
+    //   console.log(res);
+    //   this.league= res;
+    // });
   }
 
   public getLeaguescomponent(){
     console.log("getting the details");
-    console.log(this.league);
-    if(this.league.length == 0){
-      console.log("inside waiting time");
-      setTimeout(()=>{
-        console.log("please have patience!!");
-      }, 5000);
-    }
-    return this.league;
+    // console.log(this.league);
+    // if(this.league.length == 0){
+    //   console.log("inside waiting time");
+    //   setTimeout(()=>{
+    //     console.log("please have patience!!");
+    //   }, 5000);
+    // }
+    // return this.league;
   }
 
 }
