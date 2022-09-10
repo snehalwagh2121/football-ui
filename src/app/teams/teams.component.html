@@ -1,0 +1,7 @@
+<div class="teams-heading">TEAMS For League: {{leagueName}}</div>
+<div class="teams-content" *ngFor="let team of teams">
+    <div class="team-name">{{team.name}}</div>
+    <div class="team-name">{{team.country}}</div>
+    <div class="team-name">{{team.founded}}</div>
+    <div class="players-link"><a [routerLink]="['/players', team.team_id, season]">Get Players for this team</a></div>
+</div>

@@ -7,9 +7,13 @@ import { LeagueServiceService } from './leagues/league-service.service';
 import { LeaguesComponent } from './leagues/leagues.component';
 import { SeasonsComponent } from './seasons/seasons.component';
 import { RouterModule, Routes } from '@angular/router'
+import { TeamsComponent } from './teams/teams.component';
+import { PlayersComponent } from './players/players.component';
 
 const routes: Routes = [
-  {path:"leagues", component:LeaguesComponent},
+  {path:"players/:teamId/:season", component:PlayersComponent},
+  {path:"teams/:leagueId/:name/:year", component:TeamsComponent},
+  {path:"leagues/:year", component:LeaguesComponent},
   {path:"", component:SeasonsComponent}
 ]
 
@@ -17,7 +21,9 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     LeaguesComponent,
-    SeasonsComponent
+    SeasonsComponent,
+    TeamsComponent,
+    PlayersComponent
   ],
   imports: [
     BrowserModule,

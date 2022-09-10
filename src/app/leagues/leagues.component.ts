@@ -1,6 +1,7 @@
 import { Component, Injectable, OnInit } from '@angular/core';
 import { League } from './league';
 import { LeagueServiceService } from './league-service.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-leagues',
@@ -9,30 +10,25 @@ import { LeagueServiceService } from './league-service.service';
 })
 export class LeaguesComponent implements OnInit {
 
-  league: League[] = [];
-
-  constructor(private leagueService: LeagueServiceService) {
-    console.log("league componenet constructor called")
+  leagues: League[] = [];
+  year:string = "";
+  
+  constructor(private leagueService: LeagueServiceService, private _Activatedroute:ActivatedRoute) {
+    console.log("league componenet constructor called");
+    this.year=this._Activatedroute.snapshot.paramMap.get("year")!;
+    console.log("year received: "+this.year);
    }
 
   ngOnInit(): void {
     console.log("league component called to get leagues");
-    // this.leagueService.callLeaguesAPI().subscribe(res => {
-    //   console.log(res);
-    //   this.league= res;
-    // });
+    this.leagueService.callLeaguesBYSeasonAPI(this.year)
+    .subscribe( (res) => {
+      this.leagues= res;
+    });
   }
 
   public getLeaguescomponent(){
     console.log("getting the details");
-    // console.log(this.league);
-    // if(this.league.length == 0){
-    //   console.log("inside waiting time");
-    //   setTimeout(()=>{
-    //     console.log("please have patience!!");
-    //   }, 5000);
-    // }
-    // return this.league;
   }
 
 }

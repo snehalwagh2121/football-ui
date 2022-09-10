@@ -1,14 +1,20 @@
 
 export class League{
-    private leagueId:number;
-    private name:String;
-    private type:String;
-    private country:String;
+    leagueId:number;
+    name:String;
+    type:String;
+    country:String;
+    seasonYear:number
 
-    constructor(leagueId: number, name:String, type: String, country: String){
+    constructor(leagueId: number, name:String, type: String, country: String, seasonYear:number){
         this.leagueId= leagueId;
         this.name= name;
         this.type= type;
         this.country= country;
+        this.seasonYear= seasonYear;
+    }
+
+    public getName():String{
+        return this.name;
     }
 }

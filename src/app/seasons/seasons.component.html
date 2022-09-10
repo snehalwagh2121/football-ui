@@ -3,6 +3,6 @@
     <div class="heading">SEASONS</div>
     <div class="seasons-content" *ngFor="let season of seasons">
         <div class="season-value">{{season}}</div>
-        <div class="leagues-link" ><a routerLink="/leagues" routerLinkActive="active" ariaCurrentWhenActive="page">Get Leagues</a></div>
+        <div class="leagues-link" ><a [routerLink]="['/leagues',season]" routerLinkActive="active" ariaCurrentWhenActive="page">Get Leagues</a></div>
     </div>
 </div>
