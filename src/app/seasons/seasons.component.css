@@ -1,0 +1,64 @@
+.season-container{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(8, 8, 8, 0.7),
+        rgba(0, 0, 54, 0.7)
+      ),url(./images/football-frontpage-img.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.heading{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00AB66;
+    font-size: 2.5em;
+}
+.seasons-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+.season-div{
+    height: 100px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 25px;
+    border-radius: 15px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(34, 33, 33, 0.6);
+    color: #6CB4EE;
+    -webkit-transition: height 0.5s, width 0.5s;
+}
+.season-div:hover{
+    background-color: rgba(26, 25, 25, 0.8);
+    height: 110px;
+    width: 205px;
+}
+.season-value{
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+.leagues-link{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.leagues-link a{
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+}
+.leagues-link a:hover{
+    color: rgb(216, 215, 215);
+}
