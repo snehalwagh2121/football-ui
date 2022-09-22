@@ -1,0 +1,52 @@
+.teams-container{
+    height: 100%;
+    width: 100%;
+}
+.teams-heading{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.teams-selection{
+    background-color: bisque;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    /* padding: 2%; */
+}
+.teams-content{
+    background-color: aqua;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 10px;
+}
+.team-name,.team-country,.team-founded,.players-link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-name{
+    height: 31%;
+    font-weight: bold;
+}
+.team-country{
+    height: 23%;
+}
+.team-founded{
+    height: 23%;
+}
+.players-link{
+    height: 23%;
+}
+.players-link a{
+    text-decoration: none;
+}
+.players-link a:hover{
+    
+}
