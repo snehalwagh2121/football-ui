@@ -1,14 +1,24 @@
 .teams-container{
     width: 100%;
     background-color: black;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         to bottom,
         rgba(8, 8, 8, 0.8),
         rgba(0, 0, 0, 0.8)
       ),url(./images/football-pitch.jpg);
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: cover; */
+}
+.backgrnd-img-div{
+    /* height: 100%; */
+    /* width: 100%; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; 
 }
 .teams-heading{
     height: 10%;
@@ -26,7 +36,7 @@
     /* padding: 2%; */
 }
 .teams-content{
-    background-color: rgba(34, 33, 33, 0.6);
+    background-color: rgba(26, 25, 25, 0.8);
     height: 250px;
     width: 250px;
     margin: 10px;
@@ -34,36 +44,60 @@
     padding: 10px;
     color: #6CB4EE;
     -webkit-transition: height 0.5s, width 0.5s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.teams-content:hover{
-    background-color: rgba(26, 25, 25, 0.8);
-    height: 255px;
-    width: 255px;
+
+.teams-content:hover .team-country{
+    display: block;
+} 
+.teams-content:hover .players-link{
+    display: block;
 }
-.team-name,.team-country,.team-founded,.players-link{
+.teams-content:hover .team-founded{
+    display: block;
+} 
+.teams-content:hover .team-logo{
+    display: none;
+} 
+.team-name{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 .team-name{
-    height: 31%;
+    height: 30%;
     font-size: 1.2rem;
     font-weight: bold;
+    color: #7B68EE;
+}
+.team-logo{
+    height: 70%;
 }
 .team-country{
+    display: none;
+    text-align: center;
     height: 23%;
 }
 .team-founded{
+    display: none;
+    text-align: center;
     height: 23%;
 }
 .players-link{
+    display: none;
+    text-align: center;
     height: 23%;
 }
 .players-link a{
+    /* line-height: 175px; */
     text-decoration: none;
-    color: rgb(151, 151, 151);
+    color: #8a2be2;
+    -webkit-transition: color 0.5s
 }
 .players-link a:hover{
-    color: rgb(216, 215, 215);
+    color: #551a8b; 
 }

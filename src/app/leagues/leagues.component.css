@@ -5,15 +5,14 @@
         to bottom,
         rgba(8, 8, 8, 0.7),
         rgba(0, 0, 54, 0.7)
-      ),url(./images/football-stadium.jpg);
+      ),url(./images/green-grass.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
 }
 .league-heading{
-    height: 10%;
-    /* color: #00AB66; */
-    color: #fffafa;
+    height: 20%;
+    color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,20 +48,20 @@
 .league-name{
     height: 40%;
     font-size: 1.5rem;
-    color: #D648D7;
+    color: #7B68EE;
 }
 .league-country{
     height: 30%;
-    color: #DD85D8;
+    color: #6CB4EE;
 }
 .teams-link{
     height: 30%;
 }
 .teams-link a{
     text-decoration: none;
-    color: #8a2be2;
+    color: rgb(151, 151, 151);
     -webkit-transition: color 0.5s
 }
 .teams-link a:hover{
-    color: #551a8b;
+    color: rgb(216, 215, 215);
 }

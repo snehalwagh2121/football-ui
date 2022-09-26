@@ -1,86 +1,27 @@
 <div class="teams-container">
-    <!-- <div class="teams-heading">TEAMS For League: {{leagueName}}</div>
-    <div class="teams-content" *ngFor="let team of teams">
-        <div class="team-name"><p>{{team.name}}</p></div>
-        <div class="team-country"><p>{{team.country}}</p></div>
-        <div class="team-founded"><p>{{team.founded}}</p></div>
-        <div class="players-link"><a [routerLink]="['/players', team.team_id, season]">Get Players for this team</a></div>
-    </div> -->
-
-    <div class="teams-heading"><p>TEAMS For League: TEAM NAME</p></div>
+    <div class="teams-heading">TEAMS For League: {{leagueName}}</div>
     <div class="teams-selection">
-        <div class="teams-content">
-            <div class="team-name"><p>NAME</p></div>
-            <div class="team-country"><p>Country</p></div>
-            <div class="team-founded"><p>2022</p></div>
-            <div class="players-link"><a href="">Get Players for this team</a></div>
+        <div class="teams-content" *ngFor="let team of teams">
+            <div class="team-name"><p>{{team.name}}</p></div>
+            <div class="team-logo" style="background-image:url({{team.logo}})"></div>
+            <div class="team-country"><p>Country : {{team.country}}</p></div>
+            <div class="team-founded"><p>Founded in : {{team.founded}}</p></div>
+            <div class="players-link"><a [routerLink]="['/players', team.team_id, season]">Get Players for this team</a></div>
         </div>
-        <div class="teams-content">
+    </div>
+
+    <!-- <div class="teams-heading"><p>TEAMS For League: TEAM NAME</p></div>
+    <div class="teams-selection">
+        <div class="teams-content" [ngStyle]="{'background-image':'linear-gradient(
+            to bottom,
+            rgba(8, 8, 8, 0.8),
+            rgba(0, 0, 0, 0.8)
+          ),url(https://media.api-sports.io/football/teams/33.png)'}">
             <div class="team-name"><p>NAME</p></div>
             <div class="team-country"><p>Country</p></div>
             <div class="team-founded"><p>2022</p></div>
-            <div class="players-link"><a href="">Get Players for this team</a></div>
-        </div>
-        <div class="teams-content">
-            <div class="team-name"><p>NAME</p></div>
-            <div class="team-country"><p>Country</p></div>
-            <div class="team-founded"><p>2022</p></div>
-            <div class="players-link"><a href="">Get Players for this team</a></div>
-        </div>
-        <div class="teams-content">
-            <div class="team-name"><p>NAME</p></div>
-            <div class="team-country"><p>Country</p></div>
-            <div class="team-founded"><p>2022</p></div>
-            <div class="players-link"><a href="">Get Players for this team</a></div>
-        </div>
-        <div class="teams-content">
-            <div class="team-name"><p>NAME</p></div>
-            <div class="team-country"><p>Country</p></div>
-            <div class="team-founded"><p>2022</p></div>
-            <div class="players-link"><a href="">Get Players for this team</a></div>
-        </div>
-        <div class="teams-content">
-            <div class="team-name"><p>NAME</p></div>
-            <div class="team-country"><p>Country</p></div>
-            <div class="team-founded"><p>2022</p></div>
-            <div class="players-link"><a href="">Get Players for this team</a></div>
-        </div>
-        <div class="teams-content">
-            <div class="team-name"><p>NAME</p></div>
-            <div class="team-country"><p>Country</p></div>
-            <div class="team-founded"><p>2022</p></div>
-            <div class="players-link"><a href="">Get Players for this team</a></div>
-        </div>
-        <div class="teams-content">
-            <div class="team-name"><p>NAME</p></div>
-            <div class="team-country"><p>Country</p></div>
-            <div class="team-founded"><p>2022</p></div>
-            <div class="players-link"><a href="">Get Players for this team</a></div>
-        </div>
-        <div class="teams-content">
-            <div class="team-name"><p>NAME</p></div>
-            <div class="team-country"><p>Country</p></div>
-            <div class="team-founded"><p>2022</p></div>
-            <div class="players-link"><a href="">Get Players for this team</a></div>
-        </div>
-        <div class="teams-content">
-            <div class="team-name"><p>NAME</p></div>
-            <div class="team-country"><p>Country</p></div>
-            <div class="team-founded"><p>2022</p></div>
-            <div class="players-link"><a href="">Get Players for this team</a></div>
-        </div>
-        <div class="teams-content">
-            <div class="team-name"><p>NAME</p></div>
-            <div class="team-country"><p>Country</p></div>
-            <div class="team-founded"><p>2022</p></div>
-            <div class="players-link"><a href="">Get Players for this team</a></div>
-        </div>
-        <div class="teams-content">
-            <div class="team-name"><p>NAME</p></div>
-            <div class="team-country"><p>Country</p></div>
-            <div class="team-founded"><p>2022</p></div>
-            <div class="players-link"><a href="">Get Players for this team</a></div>
+            <div class="players-link"><a >Get Players for this team</a></div>
         </div>
         
-    </div>
+    </div> -->
 </div>

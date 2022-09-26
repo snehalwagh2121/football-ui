@@ -1,11 +1,76 @@
-<div class="players-heading">Players</div>
-<div class="players-content">
-    <div class="players-info" *ngFor="let player of players">
-        <div class="player-name">{{player.name}}</div>
-        <div class="player-name">{{player.firstName}}</div>
-        <div class="player-name">{{player.lastName}}</div>
-        <div class="player-name">{{player.age}}</div>
-        <div class="player-name">{{player.DOB}}</div>
-        <div class="player-name">{{player.nationality}}</div>
-    </div>
+<div class="player-container">
+    <div class="players-heading">Players</div>
+    <div class="players-content">
+        <div class="players-info" *ngFor="let player of players">
+            <div class="player-name">{{player.name}}</div>
+            <div class="player-age">Age : {{player.age}}</div>
+            <div class="player-dob" *ngIf = 'player.DOB != null  && player.DOB != ""'>DOB : {{player.DOB}}</div>
+            <div class="player-country">Country : {{player.nationality}}</div>
+        </div>
+
+        <!-- <div class="players-info">
+            <div class="player-name">Player Name</div>
+            <div class="player-first-name">First Name</div>
+            <div class="player-last-name">Last Name</div>
+            <div class="player-age">Age</div>
+            <div class="player-dob">20 Dev 2022</div>
+            <div class="player-country">Nationality</div>
+        </div>
+        <div class="players-info">
+            <div class="player-name">Player Name</div>
+            <div class="player-first-name">First Name</div>
+            <div class="player-last-name">Last Name</div>
+            <div class="player-age">Age</div>
+            <div class="player-dob">20 Dev 2022</div>
+            <div class="player-country">Nationality</div>
+        </div>
+        <div class="players-info">
+            <div class="player-name">Player Name</div>
+            <div class="player-first-name">First Name</div>
+            <div class="player-last-name">Last Name</div>
+            <div class="player-age">Age</div>
+            <div class="player-dob">20 Dev 2022</div>
+            <div class="player-country">Nationality</div>
+        </div>
+        <div class="players-info">
+            <div class="player-name">Player Name</div>
+            <div class="player-first-name">First Name</div>
+            <div class="player-last-name">Last Name</div>
+            <div class="player-age">Age</div>
+            <div class="player-dob">20 Dev 2022</div>
+            <div class="player-country">Nationality</div>
+        </div>
+        <div class="players-info">
+            <div class="player-name">Player Name</div>
+            <div class="player-first-name">First Name</div>
+            <div class="player-last-name">Last Name</div>
+            <div class="player-age">Age</div>
+            <div class="player-dob">20 Dev 2022</div>
+            <div class="player-country">Nationality</div>
+        </div>
+        <div class="players-info">
+            <div class="player-name">Player Name</div>
+            <div class="player-first-name">First Name</div>
+            <div class="player-last-name">Last Name</div>
+            <div class="player-age">Age</div>
+            <div class="player-dob">20 Dev 2022</div>
+            <div class="player-country">Nationality</div>
+        </div>
+        <div class="players-info">
+            <div class="player-name">Player Name</div>
+            <div class="player-first-name">First Name</div>
+            <div class="player-last-name">Last Name</div>
+            <div class="player-age">Age</div>
+            <div class="player-dob">20 Dev 2022</div>
+            <div class="player-country">Nationality</div>
+        </div>
+        <div class="players-info">
+            <div class="player-name">Player Name</div>
+            <div class="player-first-name">First Name</div>
+            <div class="player-last-name">Last Name</div>
+            <div class="player-age">Age</div>
+            <div class="player-dob">20 Dev 2022</div>
+            <div class="player-country">Nationality</div>
+        </div>
+    </div> -->
 </div>

@@ -41,7 +41,7 @@
 }
 .season-div:hover{
     background-color: rgba(26, 25, 25, 0.8);
-    height: 110px;
+    /* height: 110px; */
     width: 205px;
 }
 .season-value{
