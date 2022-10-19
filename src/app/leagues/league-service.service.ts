@@ -21,18 +21,19 @@ export class LeagueServiceService {
       year= "00";
       console.log("year is undefined");
     }
-    var url= "http://localhost:9000/api/v1/league/byseason/";
+    console.log(typeof Constants.getLeaguesBySeasonUrl)
+    let url= Constants.getLeaguesBySeasonUrl.toString();
     if(url == undefined){
       url="";
       console.log("url is undefined");
     }
-    var getLeaguesBySeasonUrl= url.concat(year);
+    let getLeaguesBySeasonUrl= url + year;
     console.log(getLeaguesBySeasonUrl);
     return this.http.get<League[]>(getLeaguesBySeasonUrl);
   }
 
   public callLeaguesAPI(): Observable<any>{
-    return this.http.get(Constants.leagueurl);
+    return this.http.get(Constants.getLeaguesBySeasonUrl.toString());
   }
 
 }

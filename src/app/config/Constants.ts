@@ -3,10 +3,10 @@ import { Injectable } from '@angular/core';
     providedIn: 'root'
   })
 export class Constants{
-    public static readonly leagueurl="http://localhost:9000/api/v1/league/listall";
-    public static readonly seasonsurl="http://localhost:9004/api/v1/seasons/getSeasonsList/"
-    public static readonly teamsApiForLeague="http://localhost:9001/api/v1/teams/getteamsbyleague/league/"
-    public static readonly playersurl="http://localhost:9002/api/v1/players/getplayers/"
-    public static readonly getLeaguesBySeasonUrl: "http://localhost:9000/api/v1/league/byseason/";
+    public static readonly leagueurl:String="http://15.207.99.254:9000/api/v1/league/listall";
+    public static readonly seasonsurl:String="http://15.207.99.254:9004/api/v1/seasons/getSeasonsList/"
+    public static readonly teamsApiForLeague:String="http://15.207.99.254:9001/api/v1/teams/getteamsbyleague/league/"
+    public static readonly playersurl:String="http://15.207.99.254:9002/api/v1/players/getplayers/"
+    public static readonly getLeaguesBySeasonUrl:String= "http://15.207.99.254:9000/api/v1/league/byseason/";
 
 }

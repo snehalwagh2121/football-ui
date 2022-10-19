@@ -14,6 +14,6 @@ export class PlayersService {
 
   callPlayersApi(teamId: String, season: String):Observable<Players[]> {
       console.log("calling players api for teamId: "+teamId+" and season: "+season);
-      return this.httpClient.get<Players[]>(Constants.playersurl+teamId+"/"+season);
+      return this.httpClient.get<Players[]>(Constants.playersurl.toString()+teamId+"/"+season);
   }
 }

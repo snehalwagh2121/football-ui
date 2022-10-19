@@ -12,6 +12,6 @@ export class SeasonsService {
 
   public callLeaguesBySeasonsAPI(): Observable<any>{
     console.log("calling the seasons backend api");
-    return this.http.get(Constants.seasonsurl);
+    return this.http.get(Constants.seasonsurl.toString());
   }
 }
